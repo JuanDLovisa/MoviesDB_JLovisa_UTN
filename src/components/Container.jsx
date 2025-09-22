@@ -33,7 +33,7 @@ export function Container() {
       .catch(() => setLoading(false));
   }, [search, page]);
 
-  // 🔄 Resetear página al cambiar búsqueda
+  // Resetear página al cambiar búsqueda
   useEffect(() => {
     setPage(1);
   }, [search]);
@@ -42,7 +42,7 @@ export function Container() {
     <>
       <h1 className="text-3xl font-bold text-center p-4">Películas Populares</h1>
 
-      {/* 🔎 Buscador */}
+      {/* Buscador */}
       <div className="flex justify-center mb-6">
         <input
           type="text"
@@ -53,7 +53,7 @@ export function Container() {
         />
       </div>
 
-      {/* ⏳ Loading */}
+      {/* Loading */}
       {loading ? (
         <p className="text-center text-xl">Cargando...</p>
       ) : (
@@ -66,7 +66,7 @@ export function Container() {
             )}
           </div>
 
-          {/* 📄 Paginación */}
+          {/* Paginación */}
           {movies.length > 0 && (
             <div className="flex justify-center items-center gap-4 mt-8">
               <button
