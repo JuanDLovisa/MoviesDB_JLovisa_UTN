@@ -40,7 +40,7 @@ export function Container() {
 
   return (
     <>
-      <h1 className="text-3xl font-bold text-center p-4">Películas Populares</h1>
+      <h1 className="text-3xl font-bold text-center p-4">Pomelo Movies</h1>
 
       {/* Buscador */}
       <div className="flex justify-center mb-6">
